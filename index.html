@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" media="(max-width: 991px)" />
+    <script
+      src="https://kit.fontawesome.com/7b5fb2de65.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Blog Leonardo Davila</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__logo">
+          <p class="navbar__title">
+            <a href="#">LD</a>
+          </p>
+        </div>
+        <div class="navbar__menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar__links">
+          <li class="navbar__link active" data-ref="home">
+            <a href="#home">Home</a>
+          </li>
+          <li class="navbar__link" data-ref="about">
+            <a href="#about">About</a>
+          </li>
+          <li class="navbar__link" data-ref="contact">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home" class="home">
+      <div class="home__background"></div>
+      <picture>
+        <source type="image/webp" srcset="./assets/profile.webp" />
+        <source type="image/jpeg" srcset="./assets/profile.jpg" />
+        <img class="home__profile" alt="picture profile" />
+      </picture>
+      <div class="home__description">
+        <span class="home__title--primary">Hi!</span>
+        <h1 class="home__title">I'm Leonardo Davila</h1>
+        <span class="home__title--secondary">Web Developer</span>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2 class="section__title">About</h2>
+        <div class="about__grid">
+          <div class="about__description">
+            <h2>Who am I?</h2>
+            <h2>I'm Leonardo Davila, Web Developer.</h2>
+            <p>
+              I am a <strong>Web developer</strong> with experience building websites.
+            </p>
+
+            <!-- <p> 
+              I am always seeking to improve my skills to continually grow professionally to be able to contribute consistently to the workgroup with which I am. 
+            </p> -->
+            <a
+              class="button--cta"
+              href=""
+              download="Leonardo Davila CV"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-file-download"></i>Download CV
+            </a>
+          </div>
+          <div class="about__skills">
+            <div class="skill__title">
+              <h2>My skills:</h2>
+            </div>
+            <div class="skill__item">
+              <i class="fab fa-html5"></i>
+              <div class="skill__name">HTML</div>
+            </div>
+            <div class="skill__item">
+              <i class="fab fa-css3-alt"></i>
+              <div class="skill__name">CSS</div>
+            </div>
+            <div class="skill__item">
+              <i class="fab fa-js"></i>
+              <div class="skill__name">JAVASCRIPT</div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Blog">
+      <div class="container">
+        <h2 class="section__title">Blog</h2>
+        <h3 class="section__subtitle">Hello Annie, what I write should be here normally, but I'll show you that later</h3>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <div class="contact__grid">
+          
+          <a
+            href="mailto:Leo.davila0920@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+
+              <i class="far fa-envelope"></i>
+              <p>Mail Me</p>
+            </div>
+          </a>
+          
+          <a
+            href="https://github.com/Leonardo0920"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+              <i class="fab fa-github"></i>
+              <p>Follow Me</p>
+            </div>
+          </a>
+          <a
+            href="https://twitter.com/GorditoMaracuch"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+              <i class="fab fa-twitter"></i>
+              <p>Follow Me</p>
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/leonardo-davila-b531971b9/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+              <i class="fab fa-linkedin-in"></i>
+              <p>Contact Me</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Copyright © 2021. <a href="#">Leonardo Davila</a> <br />
+          All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <script async src="./index.js"></script>
+  </body>
+</html>
