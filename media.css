@@ -101,6 +101,20 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
+
+  .services__item {
+    padding: 15px;
+  }
+
+  .services__item h3 {
+    margin-bottom: 5px;
+  }
+
+  .services__grid,
+  .portfolio__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 767px) {
