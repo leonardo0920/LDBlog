@@ -109,7 +109,7 @@
 
 @media (max-width: 767px) {
   .home-background {
-    background-image: url(../assets/bg.webp);
+    background-image: url(./assets/bg.webp);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
