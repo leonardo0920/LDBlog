@@ -1,7 +1,7 @@
 const navbar = document.querySelector(".navbar");
-const homebg = document.querySelector(".home__background");
-const menu = document.querySelector(".navbar__menu");
-const links = document.querySelector(".navbar__links");
+const homebg = document.querySelector(".home-background");
+const menu = document.querySelector(".navbar-menu");
+const links = document.querySelector(".navbar-links");
 const sections = document.querySelectorAll("section");
 const config = {
   rootMargin: "0px",
@@ -36,9 +36,9 @@ sections.forEach((section) => {
 
 function intersectionHandler(entry) {
   const id = entry.target.id;
-  const currentlyActive = document.querySelector(".navbar__links  .active");
+  const currentlyActive = document.querySelector(".navbar-links  .active");
   const shouldBeActive = document.querySelector(
-    ".navbar__links [data-ref=" + id + "]"
+    ".navbar-links [data-ref=" + id + "]"
   );
 
   if (currentlyActive) {
@@ -62,18 +62,20 @@ function intersectionHandler(entry) {
 // }
 
 ScrollReveal().reveal(".navbar", { delay: 250 });
-ScrollReveal().reveal(".home__profile", { delay: 350 });
-ScrollReveal().reveal(".home__title--primary", { delay: 350 });
-ScrollReveal().reveal(".home__title", { delay: 450 });
-ScrollReveal().reveal(".home__title--secondary", { delay: 550 });
-ScrollReveal().reveal(".section__title", { delay: 250 });
-ScrollReveal().reveal(".section__subtitle", { delay: 350 });
-ScrollReveal().reveal(".about__description", { delay: 350 });
-ScrollReveal().reveal(".about__summary", { delay: 450 });
+ScrollReveal().reveal(".home-profile", { delay: 350 });
+ScrollReveal().reveal(".title-primary", { delay: 350 });
+ScrollReveal().reveal(".home-title", { delay: 450 });
+ScrollReveal().reveal(".title-secondary", { delay: 550 });
+ScrollReveal().reveal(".section-title", { delay: 250 });
+ScrollReveal().reveal(".section-subtitle", { delay: 350 });
+ScrollReveal().reveal(".about-description", { delay: 350 });
+ScrollReveal().reveal(".about-summary", { delay: 450 });
 ScrollReveal().reveal(".button--cta", { delay: 550 });
-ScrollReveal().reveal(".skill__title", { delay: 450 });
-ScrollReveal().reveal(".skill__item", { delay: 450 });
-ScrollReveal().reveal(".services__item", { delay: 450 });
-ScrollReveal().reveal(".portfolio__item", { delay: 450 });
-ScrollReveal().reveal(".contact__item", { delay: 450 });
+ScrollReveal().reveal(".skill-title", { delay: 450 });
+ScrollReveal().reveal(".skill-item", { delay: 450 });
+ScrollReveal().reveal(".blog-title", { delay: 450 });
+ScrollReveal().reveal(".blog-item", { delay: 450 });
+ScrollReveal().reveal(".services-item", { delay: 450 });
+ScrollReveal().reveal(".portfolio-item", { delay: 450 });
+ScrollReveal().reveal(".contact-item", { delay: 450 });
 ScrollReveal().reveal(".footer", { delay: 450 });
