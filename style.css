@@ -15,6 +15,7 @@
     --orange:#e34c26;
     --green:#008744;
     --blueReact: #61DBFB;
+    --node: #509642;
 }
 
 a {
@@ -34,6 +35,7 @@ body {
     font-family: 'Noto Sans Mono', monospace;
     background-color: var(--white);
     color: #252424;
+
 }
 
 
@@ -71,7 +73,7 @@ section {
     font-size: 24px;
 }
 
-.navbar-title::before {
+/* .navbar-title::before {
     content: "<";
     color: var(--blue);
 }
@@ -79,7 +81,7 @@ section {
 .navbar-title::after {
     content: "/>";
     color: var(--blue);
-}
+} */
 
 .navbar-links {
     list-style: none;
@@ -98,7 +100,8 @@ section {
 }
 
 .navbar-link a:hover {
-    color: var(--blue);
+    color: black;
+    background-color: white;
     transition: color 0.3s;
 }
 
@@ -114,6 +117,7 @@ section {
     padding: 30px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background: rgba(0, 0, 0, 0.8);
     position: relative;
 }
@@ -140,7 +144,7 @@ section {
 .title-home {
     font-size: 60px;
     text-shadow: 2px 2px black;
-    color: var(--blue);
+    color: var(--white);
 }
 
 .title-primary, .title-secondary {
@@ -219,9 +223,16 @@ section {
 .fa-js {
     color: #f0db4f;
 }
+.fa-react {
+    color: var(--blueReact);
+}
+.fa-node {
+    color: var(--node);
+}
 .fa-python {
     color: #f0db4f;
 }
+
 
 .skill-name {
     font-size:  16px;
@@ -345,7 +356,7 @@ section {
 }
 
 .button:hover {
-    color: yellow;
+    color: rgb(40, 187, 227);
 }
 
 /* .button--cta {
@@ -506,5 +517,5 @@ section {
 }
 
 .footer a:hover {
-    color: yellow;
+    color: white;
 }

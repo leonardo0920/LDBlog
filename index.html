@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Front-end Developer | Leonardo Davila</title>
+    <meta name="description" content="">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css" media="(max-width: 990px)">
-    <title>Blog Leonardo Davila</title>
+    <title>Front-end Developer | Leonardo Davila</title>
+    <link rel="shortcut icon" href="./assets/profile.jpg">
     <script src="https://kit.fontawesome.com/7b5fb2de65.js" crossorigin="anonymous" async></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
@@ -27,19 +30,19 @@
                         <a href="#home">Home</a>
                     </li>
                     <li class="navbar-link" data-ref="about">
-                        <a href="#about">About</a>
+                        <a href="#about">Sobre mi</a>
                     </li>
-                    <li class="navbar-link" data-ref="blog">
+                    <!-- <li class="navbar-link" data-ref="blog">
                         <a href="#blog">Blog</a>
-                    </li>
+                    </li> -->
                     <li class="navbar-link" data-ref="portfolio">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#portfolio">Portafolio</a>
                     </li>
                     <li class="navbar-link" data-ref="services">
-                        <a href="#services">services</a>
+                        <a href="#services">Servicios</a>
                     </li>
                     <li class="navbar-link" data-ref="contact">
-                        <a href="#contact">Contact</a>
+                        <a href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -47,14 +50,9 @@
 
         <section id="home" class="home">
             <div class="home-background"></div>
-            <picture>
-                <source type="image/webp" srcset="./assets/profile.webp" />
-                <source type="image/jpg" srcset="./assets/profile.jpg" />
-                <img class="home-profile" alt="picture profile">
-            </picture>
             <div class="home-description">
-                <span class="title-primary">Hi!</span>
-                <h1 class="title-home">I'm Leonardo Davila</h1>
+                <span class="title-primary">Hola!</span>
+                <h1 class="title-home">Soy Leonardo Davila</h1>
                 <span class="title-secondary">Front-end Developer</span>
             </div>
         </section>
@@ -63,22 +61,20 @@
     <main class="main">
         <section id="about">
             <div class="container">
-                <h2 class="section-title">About</h2>
+                <h2 class="section-title">Sobre Mi</h2>
                 <div class="about-grid">
                     <div class="about-description">
-                        <h2>Who am I?</h2>
-                        <h2>I'm Leonardo Davila, Web Developer.</h2>
+                        <h2>¿Quién soy?</h2>
+                        <h2>Soy Leonardo Dávila, Front-end Developer.</h2>
                         <p>
-                            I am a <strong>Front-end developer</strong> with experience building websites.
-                        </p>
-            
-                        <p> 
-                            I am always seeking to improve my skills to continually grow professionally to be able to contribute consistently to the workgroup with which I am.
+                            Soy un <strong>Front-end developer</strong> con experiencia en creacion de sitios web.
+                            <br>
+                            Siempre estoy buscando mejorar mis habilidades para crecer profesionalmente continuamente para poder contribuir de manera constante al grupo de trabajo con el que estoy.
                         </p>
                     </div>
                     <div class="about-skill">
                         <div class="skill-title">
-                            <h2>My Skills: </h2>
+                            <h2>Mis Habilidades: </h2>
                         </div>
                         <div class="skill-item">
                             <i class="fa fa-html5"></i>
@@ -93,6 +89,14 @@
                             <div class="skill-name">JavaScript</div>
                         </div>
                         <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <div class="skill-name">React</div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node"></i>
+                            <div class="skill-name">Node.js</div>
+                        </div>
+                        <div class="skill-item">
                             <i class="fab fa-python"></i>
                             <div class="skill-name">Python</div>
                         </div>
@@ -101,10 +105,10 @@
             </div>
         </section>
 
-        <section id="blog" class="blog">
+        <!-- <section id="blog" class="blog">
             <div class="container">
                 <h2 class="section-title">Blog</h2>
-                <!-- <h3 class="section-subtitle">Blog personal</h3> -->
+                <h3 class="section-subtitle">Blog personal</h3>
                 <div class="blog-grid">
                     <div class="blog-item">
                         <i class="fa fa-commenting-o"></i>
@@ -128,12 +132,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="portfolio" class="portfolio">
             <div class="container">
-                <h2 class="section-title">Portfolio</h2>
-                <h3 class="section-subtitle">Here you can see the projects I have worked on.</h3>
+                <h2 class="section-title">Portafolio</h2>
+                <h3 class="section-subtitle">Aquí puedes ver los proyectos en los que he trabajado.</h3>
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
                         <picture>
@@ -141,7 +145,7 @@
                             <img class="project-img" alt="portfolio item" />
                         </picture>
                         <div class="project-description">
-                            <h3 class="project-title">Blog personal</h3>
+                            <h3 class="project-title">Pagina personal</h3>
                             <p class="project-tool">Herramientas: HTML, CSS, JS
                             </p>
                             <div class="button-container">
@@ -156,53 +160,87 @@
                             </div>
                         </div>
                     </div>
+                    <div class="portfolio-item">
+                        <picture>
+                            <source type="image/png" srcset="./projects/project-blog-3.webp" />
+                            <img class="project-img" alt="portfolio item" />
+                        </picture>
+                        <div class="project-description">
+                            <h3 class="project-title">8BitsLand</h3>
+                            <p class="project-tool">Herramientas: HTML, CSS, JS
+                            </p>
+                            <div class="button-container">
+                                <a class="button" href="https://8bitsland.com/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa fa-globe"></i>
+                                    Website 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <picture>
+                            <source type="image/png" srcset="./projects/project-blog-2.webp" />
+                            <img class="project-img" alt="portfolio item" />
+                        </picture>
+                        <div class="project-description">
+                            <h3 class="project-title">YaninDesign</h3>
+                            <p class="project-tool">Herramientas: HTML, CSS, JS
+                            </p>
+                            <div class="button-container">
+                                <a class="button" href="https://yanindesign.com/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa fa-globe"></i>
+                                    Website 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="services">
             <div class="container">
-                <h2 class="section-title">Services</h2>
-                <h3 class="section-subtitle">Services i offer to my clients.</h3>
+                <h2 class="section-title">Servicios</h2>
+                <h3 class="section-subtitle">Servicios que ofrezco a mis clientes.</h3>
                 <div class="services-grid">
                     <div class="services-item">
                         <i class="fas fa-mobile-alt"></i>
-                        <h3>Fully Responsive</h3>
+                        <h3>Diseño Resposivo</h3>
                         <p>
-                            Your site will display properly on any device, including desktop
-                            computers, tablets and mobile phones.
+                            Su sitio se mostrará correctamente en cualquier dispositivo, 
+                            incluidas computadoras de escritorio, tabletas y teléfonos móviles.
                         </p>
                     </div>
                     <div class="services-item">
                         <i class="fas fa-pencil-ruler"></i>
-                        <h3>Creative Design</h3>
+                        <h3>Diseño creativo</h3>
                         <p>
-                            A good and attractive web design helps you keep your leads on your
-                            site, which is the digital face of your business.
+                            Un buen y atractivo diseño web lo ayuda a mantener sus clientes potenciales en su sitio, 
+                            que es la cara digital de su negocio.
                         </p>
                     </div>
                     <div class="services-item">
                         <i class="fas fa-code"></i>
-                        <h3>Development</h3>
+                        <h3>Desarrollo</h3>
                         <p>
-                            I know the importance of web design and can help you create a 
-                            website you’ll love.
+                            Conozco la importancia del diseño web y puedo ayudarte a crear un sitio web 
+                            que te encantará.
                         </p>
                     </div>
                     <div class="services-item">
                         <i class="fas fa-thumbs-up"></i>
-                        <h3>Social Media Integration</h3>
+                        <h3>Integración de redes sociales</h3>
                         <p>
-                            There are a lot of social platforms out there, and you should
-                            promote your presence on them on your website
+                            Existen muchas plataformas sociales, 
+                            y debe promocionar su presencia en ellas en su sitio web.
                         </p>
                     </div>
                     <div class="services-item">
                         <i class="fas fa-tachometer-alt"></i>
                         <h3>Performance</h3>
                         <p>
-                            Retaining users is crucial to improving conversions.
-                            High-performing sites engage and retain users
+                            Retener a los usuarios es crucial para mejorar las conversiones. 
+                            Los sitios de alto rendimiento atraen y retienen a los usuarios
                         </p>
                     </div>
                 </div>
@@ -211,36 +249,36 @@
 
         <section id="contact">
             <div class="container">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title">Contacto</h2>
                 <div class="contact-grid">
-                    <a href="Leo.davila0920@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:Leo.davila0920@gmail.com" target="_blank" rel="noopener noreferrer">
                         <div class="contact-item">
                             <i class="far fa-envelope"></i>
-                            <p>Mail Me</p>
+                            <p>Contactame</p>
                         </div>
                     </a>
                     <a href="https://github.com/Leonardo0920" target="_blank" rel="noopener noreferrer">
                         <div class="contact-item">
                             <i class="fab fa-github"></i>
-                            <p>Follow Me</p>
+                            <p>Sigueme</p>
                         </div>
                     </a>
                     <a href="https://www.instagram.com/leonardo0920/" target="_blank" rel="noopener noreferrer">
                         <div class="contact-item">
                             <i class="fa fa-instagram"></i>
-                            <p>Follow Me</p>
+                            <p>Sigueme</p>
                         </div>
                     </a>
                     <a href="https://twitter.com/Legalmente_Leo" target="_blank" rel="noopener noreferrer">
                         <div class="contact-item">
                             <i class="fab fa-twitter"></i>
-                            <p>Follow Me</p>
+                            <p>Sigueme</p>
                         </div>
                     </a>
                     <a href="https://www.linkedin.com/in/leonardo-davila-b531971b9/" target="_blank" rel="noopener noreferrer">
                         <div class="contact-item">
                             <i class="fab fa-linkedin-in"></i>
-                            <p>Contact Me</p>
+                            <p>Contactame</p>
                         </div>
                     </a>
                 </div>
@@ -251,7 +289,7 @@
         <div class="container">
             <p>
                 Copyright © 2021. <a href="#">Leonardo Davila</a> <br />
-                All Rights Reserved
+                Todos los derechos reservados
             </p>
         </div>
     </footer>
