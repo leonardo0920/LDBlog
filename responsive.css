@@ -53,6 +53,7 @@
 
   .section-title {
     font-size: 25px;
+    justify-content: center;
   }
 
   .section-title::after {
@@ -66,6 +67,13 @@
 
   .about-description {
     padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-description p {
+    text-align: center;
   }
 
   .about-grid {
@@ -74,6 +82,8 @@
 
   .skill-title {
     grid-column: span 4;
+    display: flex;
+    justify-content: center;
   }
 
   .about-skill {
