@@ -124,7 +124,7 @@ section {
 
 .home-background {
     background-color: white;
-    background-image: url(./assets/bg\ .webp);
+    background-image: url(../assets/bg.webp);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
